@@ -1,0 +1,207 @@
+/*========== HTML & BODY ==========*/
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/*========== BODY BACKGROUNDS ==========*/
+.body-home {
+  background-image: url('images/background-01-land.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.body-meals {
+  background-image: url('images/Soft Pastel Yellow.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Professional text color */
+  color: #2F4F4F; /* Dark Slate Gray */
+}
+
+/*========== CUSTOM CHECKBOXES ==========*/
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f0c8";
+  letter-spacing: 10px;
+  font-size: 20px;
+}
+
+input[type=checkbox]:checked + label:before {
+  content: "\f14a";
+}
+
+/*========== HEADER ==========*/
+.header {
+  background-color: #3E4A3D;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  position: fixed;
+  overflow: hidden;
+  text-align: center;
+}
+
+.header i {
+  float: left;
+  padding: 17px 8px 8px 17px;
+  color: #ffffff;
+}
+
+.header img {
+  width: 150px;
+  padding-top: 14px;
+  padding-right: 25px;
+}
+
+/*========== HOME PAGE ==========*/
+#home-logo-img {
+  width: 50px;
+  display: block;
+  margin: auto;
+  padding: 25px 10px 10px 10px;
+}
+
+#logo-text {
+  display: block;           /* makes it a block element */
+  margin-left: auto;        /* center horizontally */
+  margin-right: auto;       /* center horizontally */
+  width: 500px;             /* bigger size */
+  max-width: 90%;           /* responsive */
+  height: auto;             /* maintain aspect ratio */
+  
+  position: relative;       /* allows moving with top */
+  top: -30px;               /* push up more */
+}
+
+/*========== HOME MENU ==========*/
+.home-menu-item {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  border: 5px solid white;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+/*========== MEALS PAGE ==========*/
+#meals {
+  padding-top: 50px;
+}
+
+/*========== MEALS PAGE MENU ==========*/
+.meals-list a {
+  text-decoration: none;
+  color: #2F4F4F; /* dark slate gray for links */
+}
+
+.meals-list-item {
+  border: 2px solid #2F4F4F; /* subtle border for professional look */
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.6); /* slightly transparent background */
+  border-radius: 8px;
+}
+
+.meals-list-item h1 {
+  font-weight: bold;
+  font-size: 28px;
+  color: #2F4F4F;
+  padding-left: 10px;
+}
+
+.meals-list-item i {
+  float: right;
+  color: #556B2F; /* dark olive green accent */
+  padding-right: 10px;
+}
+
+.meals-list-item p {
+  font-size: 15px;
+  font-style: italic;
+  color: #2F4F4F;
+  margin-top: -7px;
+  padding-left: 10px;
+}
+
+/*---------- RECIPE PAGE ----------*/
+.recipe {
+  padding-top: 50px;
+}
+
+/*---------- RECIPE DETAILS ----------*/
+.recipe-details-img {
+  width: 100%;
+}
+
+.recipe-details h1 {
+  font-size: 25px;
+  text-align: center;
+  border: 2px solid #2F4F4F;
+  margin: 10px;
+  padding: 5px;
+  color: #2F4F4F;
+}
+
+.recipe-details h2 {
+  font-size: 20px;
+  text-align: left;
+  margin: 0;
+  margin-left: 10px;
+  color: #2F4F4F;
+}
+
+.recipe-details-info {
+  margin-left: 25px;
+  margin-right: 25px;
+  color: #2F4F4F;
+}
+
+.recipe-details-info p {
+  font-size: 13px;
+  display: inline-block;
+  color: #2F4F4F;
+}
+
+.recipe-details-ingredients label {
+  line-height: 25px;
+  margin-left: 18px;
+  color: #2F4F4F;
+}
+
+.recipe-details-steps {
+  padding-top: 20px;
+}
+
+.recipe-details-steps ol {
+  padding-left: 28px;
+  color: #2F4F4F;
+}
+
+/*========== LINKS & BUTTONS ==========*/
+.body-meals a {
+  color: #556B2F; /* dark olive green links */
+  text-decoration: underline;
+}
+
+/* Hover effect */
+.body-meals a:hover {
+  color: #2F4F4F;
+}
